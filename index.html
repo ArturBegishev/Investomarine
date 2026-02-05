@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>INVESTOMARINE | Бухгалтерия и e-решения в Эстонии</title>
+    <meta name="description" content="Цифровая бухгалтерия в Эстонии для микро-бизнеса, стартапов, НКО и э-резидентов. Регистрация компаний, расчет зарплат и налоговое консультирование. Обслуживаем по всей Эстонии.">
+    <meta name="keywords" content="бухгалтерия Эстония, raamatupidamine, e-resident accounting, регистрация фирмы Таллинн, расчет зарплат, MTÜ raamatupidamine, стартап бухгалтерия">
+    <meta name="author" content="INVESTOMARINE">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:title" content="INVESTOMARINE | Ваш цифровой бухгалтер в Эстонии">
+    <meta property="og:description" content="Современная безбумажная бухгалтерия. Обслуживаем клиентов по всей Эстонии.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="hero-bg.jpg"> <link rel="icon" type="image/png" href="favicon.png"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #003366;
+            --accent: #0071e3;
+            --text: #1d1d1f;
+            --bg: #f5f7f9;
+        }
+
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0; padding: 0; color: var(--text); background: var(--bg);
+        }
+
+        header {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 15px 8%; background: white; border-bottom: 1px solid #eaeaea;
+            position: sticky; top: 0; z-index: 1000;
+        }
+
+        .logo-text { text-transform: uppercase; letter-spacing: 0.5px; cursor: default; }
+        .logo-text .bold { font-weight: 800; color: var(--primary); }
+        .logo-text .thin { font-weight: 200; color: #666; }
+        .logo-text .dot { color: var(--accent); font-weight: 800; }
+
+        header .logo-text { font-size: 1.5rem; }
+
+        .lang-switch button {
+            background: none; border: 1px solid #ddd; padding: 5px 12px;
+            border-radius: 20px; cursor: pointer; margin-left: 5px; font-size: 12px;
+            transition: 0.3s; font-weight: 500;
+        }
+        .lang-switch button:hover { background: var(--bg); border-color: var(--accent); }
+
+        .hero-banner {
+            width: 100%; height: 480px;
+            background: url('hero-bg.jpg') center center / cover no-repeat;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .main-content {
+            display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px;
+            max-width: 1100px; margin: -60px auto 40px; padding: 40px;
+            background: white; border-radius: 16px; box-shadow: 0 15px 35px rgba(0,0,0,0.07);
+        }
+
+        .hero-info .main-title { font-size: 3.5rem; margin: 0; line-height: 1; }
+        .hero-info h2 { color: var(--accent); font-weight: 400; font-size: 1.3rem; margin: 15px 0 25px; }
+        .hero-info p { line-height: 1.8; color: #444; font-size: 1.05rem; }
+
+        .services-area h3 { color: var(--primary); margin-bottom: 20px; font-size: 1.4rem; }
+        .services-list { display: grid; grid-template-columns: 1fr; gap: 15px; }
+        .service-item { background: var(--bg); padding: 20px; border-radius: 12px; border-left: 5px solid var(--accent); }
+        .service-item h3 { margin-top: 0; font-size: 1.1rem; color: var(--primary); margin-bottom: 8px; }
+        .service-item p { font-size: 0.95rem; margin-bottom: 0; color: #555; line-height: 1.5; }
+
+        .contact-footer { background: var(--primary); color: white; padding: 80px 8%; }
+        .contact-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; }
+        .contact-links { font-size: 1.3rem; line-height: 2.5; margin-top: 25px; }
+        .contact-links a { color: #5fb2ff; text-decoration: none; font-weight: 500; }
+        .contact-links i { width: 35px; color: #5fb2ff; font-size: 1.4rem; }
+
+        .messenger-btns { display: flex; flex-direction: column; gap: 15px; justify-content: center; }
+        .m-btn {
+            display: flex; align-items: center; justify-content: center;
+            padding: 18px 25px; border-radius: 12px; text-decoration: none;
+            font-weight: 600; transition: 0.3s; color: white; gap: 12px; font-size: 1.2rem;
+        }
+        .whatsapp { background-color: #25D366; }
+        .telegram { background-color: #0088cc; }
+        .m-btn:hover { opacity: 0.9; transform: translateY(-3px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+        footer { text-align: center; padding: 40px; font-size: 0.85rem; color: #888; background: white; border-top: 1px solid #eee; }
+
+        @media (max-width: 950px) {
+            .main-content, .contact-grid { grid-template-columns: 1fr; margin-top: 20px; }
+            .hero-banner { height: 320px; }
+            .hero-info .main-title { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-text">
+        <span class="bold">investo</span><span class="thin">marine</span><span class="dot">.</span>
+    </div>
+    <nav class="lang-switch">
+        <button onclick="changeLang('ee')" aria-label="Eesti keel">EST</button>
+        <button onclick="changeLang('ru')" aria-label="Русский язык">RUS</button>
+        <button onclick="changeLang('en')" aria-label="English">ENG</button>
+    </nav>
+</header>
+
+<div class="hero-banner" role="img" aria-label="Background office image"></div>
+
+<main class="main-content">
+    <section class="hero-info">
+        <h1 class="main-title logo-text">
+            <span class="bold">investo</span><span class="thin">marine</span><span class="dot">.</span>
+        </h1>
+        <h2 id="h-sub">Ваш цифровой партнер в мире финансов</h2>
+        <p id="h-text">
+            Благодаря современным e-решениям для нас не существует границ: мы обслуживаем клиентов вне зависимости от их географии. Наша цель — стать надежной опорой как для начинающих, так и для опытных предпринимателей. Пока мы берем на себя заботу о безбумажной цифровой бухгалтерии, вы можете полностью сфокусироваться на развитии своего дела, росте прибыли и увеличении оборота.
+        </p>
+    </section>
+
+    <section class="services-area">
+        <h3 id="s-head">Наши услуги</h3>
+        <div class="services-list">
+            <article class="service-item">
+                <h3 id="s1-t">Бухгалтерия</h3>
+                <p id="s1-d">Индивидуальные решения для микро и малых фирм, стартапов, НКО (MTÜ) и e-резидентов. Обеспечиваем прозрачность и удаленный доступ к данным.</p>
+            </article>
+            <article class="service-item">
+                <h3 id="s2-t">Расчет зарплат</h3>
+                <p id="s2-d">Предлагаем расчет зарплат как отдельную услугу или часть пакета. Рассчитываем оклады и декларируем налоги.</p>
+            </article>
+            <article class="service-item">
+                <h3 id="s3-t">Создание компании</h3>
+                <p id="s3-d">Поможем на каждом этапе: от выбора формы бизнеса до оформления документов и первичной настройки учета.</p>
+            </article>
+            <article class="service-item">
+                <h3 id="s4-t">Выставление счетов</h3>
+                <p id="s4-d">Полное управление инвойсингом: от создания счетов для ваших клиентов до их своевременного отражения в учете.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<section id="contact" class="contact-footer">
+    <div class="contact-grid">
+        <div>
+            <h2 id="c-title" style="font-size: 2.2rem;">Готовы начать?</h2>
+            <p id="c-desc" style="opacity: 0.8; font-size: 1.2rem;">Свяжитесь с нами сегодня удобным для вас способом.</p>
+            <address class="contact-links" style="font-style: normal;">
+                <i class="fa-regular fa-envelope"></i> <a href="mailto:investomarine@gmail.com">investomarine@gmail.com</a><br>
+                <i class="fa-solid fa-phone"></i> <a href="tel:+3725147112">+372 5147 112</a>
+            </address>
+        </div>
+        <div class="messenger-btns">
+            <a href="https://wa.me/3725147112" class="m-btn whatsapp" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp fa-2xl"></i> WhatsApp
+            </a>
+            <a href="https://t.me/+3725147112" class="m-btn telegram" target="_blank" rel="noopener">
+                <i class="fa-brands fa-telegram fa-2xl"></i> Telegram
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 INVESTOMARINE. <span id="f-copy">Все права защищены.</span> | Tallinn, Estonia</p>
+</footer>
+
+<script>
+const data = {
+    'ru': {
+        'h-sub': 'Ваш цифровой партнер в мире финансов',
+        'h-text': 'Благодаря современным e-решениям для нас не существует границ: мы обслуживаем клиентов вне зависимости от их географии. Наша цель — стать надежной опорой как для начинающих, так и для опытных предпринимателей. Пока мы берем на себя заботу о безбумажной цифровой бухгалтерии, вы можете полностью сфокусироваться на развитии своего дела, росте прибыли и увеличении оборота.',
+        's-head': 'Наши услуги',
+        's1-t': 'Бухгалтерия', 's1-d': 'Индивидуальные решения для микро и малых фирм, стартапов, НКО (MTÜ) и e-резидентов. Обеспечиваем прозрачность и удаленный доступ к данным.',
+        's2-t': 'Расчет зарплат', 's2-d': 'Предлагаем расчет зарплат как отдельную услугу или часть пакета. Рассчитываем оклады и декларируем налоги.',
+        's3-t': 'Создание компании', 's3-d': 'Поможем на каждом этапе: от выбора формы бизнеса до оформления документов и первичной настройки учета.',
+        's4-t': 'Выставление счетов', 's4-d': 'Полное управление инвойсингом: от создания счетов для ваших клиентов до их своевременного отражения в учете.',
+        'c-title': 'Готовы начать?', 'c-desc': 'Свяжитесь с нами сегодня удобным для вас способом.',
+        'f-copy': 'Все права защищены.'
+    },
+    'ee': {
+        'h-sub': 'Teie digitaalne partner finantsmaailmas',
+        'h-text': 'Tänu kaasaegsetele e-lahendustele ei ole meie jaoks piire: teenindame kliente asukohast sõltumata. Oleme usaldusväärne partner nii alustavale kui juba tegutsevale ettevõtjale. Sel ajal kui meie hoolitseme paberivaba digiraamatupidamise eest, saate Teie keskenduda oma põhitegevusele, äri kasvatamisele ja kasumi suurendamisele.',
+        's-head': 'Meie teenused',
+        's1-t': 'Raamatupidamine', 's1-d': 'Individuaalsed lahendused mikro- ja väikeettevõtetele, idufirmadele, MTÜ-dele ja e-residentidele. Tagame läbipaistvuse ja mugava ligipääsu andmetele.',
+        's2-t': 'Palgaarvestus', 's2-d': 'Pakume palgaarvestust nii eraldiseisva teenusena kui raamatupidamisteenuse osana. Arvestame palgad ja deklareerime maksud.',
+        's3-t': 'Ettevõtte alustamine', 's3-d': 'Kui oled ettevõtlusega alustamas, aitame sind kogu protsessi vältel: valime sobiva ettevõtlusvormi ja vormistame asutamisdokumendid.',
+        's4-t': 'Arvete koostamine', 's4-d': 'Täielik arvete haldus: koostame arved teie klientidele ja tagame nende õigeaegse kajastamise raamatupidamises.',
+        'c-title': 'Kas olete valmis?', 'c-desc': 'Võtke meiega ühendust juba täna Teile sobival viisil.',
+        'f-copy': 'Kõik õigused kaitstud.'
+    },
+    'en': {
+        'h-sub': 'Your digital partner in the world of finance',
+        'h-text': 'With modern e-solutions, geography is no longer a limit: we serve clients wherever they are. Our goal is to support both startups and established businesses. While we handle your paperless digital accounting, you can focus entirely on your core business, growth, and increasing profitability.',
+        's-head': 'Our Services',
+        's1-t': 'Accounting', 's1-d': 'Personalized solutions for micro and small firms, startups, NGOs (MTÜ), and e-residents. We provide transparency and remote access.',
+        's2-t': 'Payroll Services', 's2-d': 'We offer payroll as a standalone service or part of a package. We calculate salaries and declare taxes.',
+        's3-t': 'Company Formation', 's3-d': 'Helping you at every step: from choosing a business form to documents and accounting setup.',
+        's4-t': 'Invoicing Services', 's4-d': 'Full invoicing management: from creating bills for your clients to their timely recording in the books.',
+        'c-title': 'Ready to start?', 'c-desc': 'Contact us today via your preferred method.',
+        'f-copy': 'All rights reserved.'
+    }
+};
+
+function changeLang(lang) {
+    for (let key in data[lang]) {
+        document.getElementById(key).textContent = data[lang][key];
+    }
+    document.documentElement.lang = lang;
+}
+</script>
+</body>
+</html>
